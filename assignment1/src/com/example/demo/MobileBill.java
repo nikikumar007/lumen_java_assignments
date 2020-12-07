@@ -1,20 +1,20 @@
 package com.example.demo;
 
-public class mobileBill {
+public class MobileBill {
 private String name;
 private long phoneNumber;
 private String planName;
 public static String telecomName="BSNL";
-public mobileBill() {
+public MobileBill() {
 }
 
-public mobileBill(String name, long phoneNumber, String planName) {
+public MobileBill(String name, long phoneNumber, String planName) {
 	super();
 	this.name = name;
 	this.phoneNumber = phoneNumber;
 	this.planName = planName;
 }
-public mobileBill(String name, long phoneNumber) {
+public MobileBill(String name, long phoneNumber) {
 	super();
 	this.name = name;
 	this.phoneNumber = phoneNumber;
