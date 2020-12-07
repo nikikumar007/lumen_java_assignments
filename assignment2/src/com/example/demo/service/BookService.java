@@ -4,18 +4,18 @@ import com.example.demo.Book;
 
 public class BookService {
 
-	public double calculateDiscount(Book b) {
+	public double calculateDiscount(Book book1) {
 		double discount = 0;
-		if (b.getPrice() > 4000) {
+		if (book1.getPrice() > 4000) {
 			discount = 1000;
-		} else if (b.getPrice() < 4000) {
+		} else if (book1.getPrice() < 4000) {
 			discount = 500;
 		}
 		return discount;
 
 	}
 
-	public double calculateDiscount(Book b, String customerType) {
+	public double calculateDiscount(Book book1, String customerType) {
 		double discount = 0;
 		String type = customerType;
 		if (type.equalsIgnoreCase("Corporate")) {
