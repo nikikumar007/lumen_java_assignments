@@ -3,29 +3,31 @@ package com.example.demo;
 import com.example.demo.ifaces.Billable;
 
 public class SoftwareEngineer implements Billable {
-	private String position;
+	private int level;
 
-	public SoftwareEngineer(String position) {
+	public SoftwareEngineer(int level) {
 		super();
-		this.position = position;
+		this.level = level;
 	}
 
-	public String getPosition() {
-		return position;
+	public int getLevel() {
+		return level;
 	}
 
-	public void setPosition(String position) {
-		this.position = position;
+	public void setLevel(int level) {
+		this.level = level;
 	}
 
 	@Override
 	public double calculate() {
 		double salary = 0;
 		// TODO Auto-generated method stub
-		if (this.getPosition().equalsIgnoreCase("developer")) {
+		if (this.getLevel() == 1) {
 			salary = 2000.0;
-		} else if (this.getPosition().equalsIgnoreCase("testing")) {
+		} else if (this.getLevel() == 2) {
 			salary = 3000.0;
+		} else {
+			salary = 50000;
 		}
 		return salary;
 	}

@@ -11,7 +11,7 @@ public class Service {
 	}
 
 	public static void main(String[] args) {
-		SoftwareEngineer softengg = new SoftwareEngineer("developer");
+		SoftwareEngineer softengg = new SoftwareEngineer(1);
 		CivilEngineer civilengg = new CivilEngineer("designer");
 		print(civilengg);
 		print(softengg);
